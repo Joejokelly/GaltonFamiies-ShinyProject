@@ -1,4 +1,7 @@
-# This application is used for Galton Family
+# This application is used for Galton Family dataset
+# It is used to predict the children height daugher or son
+# You choose the Mother and fathers height using the slider and the Algorithm
+# predicts the children's height using geom_point()
 # run the application by clicking 'Run App' above.
 # GaltonFamily Ui.R
 
@@ -13,16 +16,16 @@ shinyUI(fluidPage (
             helpText("parameter"),
             sliderInput(inputId = "inFh",
               label = "Father heignt cm. ",
-              value = 145,
-              min = 145,
-              max = 200,
+              value = 150,
+              min = 150,
+              max = 220,
               step = 1),
             
             sliderInput(inputId = "inMh",
                   label = "Mothers height cm ",
                   value = 140,
-                  min = 130,
-                  max = 180,
+                  min = 140,
+                  max = 200,
                   step = 1),
               
             radioButtons(inputId = "inGen",
@@ -35,7 +38,7 @@ shinyUI(fluidPage (
     mainPanel(
         htmlOutput("pText"),
         htmlOutput("pred"),
-        plotOutput("Plot", width="50%")
+        plotOutput("Plot", width="90%")
     )
     
   )

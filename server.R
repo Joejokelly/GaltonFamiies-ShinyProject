@@ -50,6 +50,8 @@ theme_set(theme_classic())
             )
         })
         
+    ### Define the Output Plot, Draw the plot with geom_point
+        
         output$Plot <- renderPlot({
             kid <- ifelse(
                 input$inGen=="female",
@@ -64,35 +66,16 @@ theme_set(theme_classic())
             df <- data.frame(
                 x = factor(yvals, levels = yvals, ordered = TRUE),
                 y = c(input$inFh, ch, input$inMh))
-            
-            g <- ggplot(df, aes(x=x, y=y))
-            g + geom_boxplot(varwidth = T, fill = "plum") +
-                #g + geom_boxplot(aes(fill=factor(cyl))) + 
-                #theme(axis.text.x = element_text(angle=65, vjust=0.6)) +    
-                
-                labs(title = "Box plot",
-                     subtitle = "height of kides",
-                     caption= "Source: height",
-                     x = "Parents Height",
-                     y = "Kids Height")
+                ggplot(df, aes(x=x, y=y)) +
+                geom_point() + xlab("") + ylab("Height in cm") +
+                scale_y_continuous(expand = c(0.5, 0.5), limits = c(0, NA)) +  
+               #theme_minimal() + theme(legend.position = "none", plot.margin = unit(c(1,1,1,1),"cm")) + 
                     
-            
-            
-            #g <- ggplot(df, aes(x=x, y=y))
-            #g + geom_boxplot(varwidth=T, fill="plum") + 
-                #labs(title="Box plot", 
-                     #subtitle="City Mileage grouped by Class of vehicle",
-                     #caption="Source: mpg",
-                     #x="Class of Vehicle",
-                     #y="City Mileage")
-                
-            #ggplot(df, aes(x=x, y=y, color=c("red", "green", "blue"), fill=c("red", "green", "blue"))) +
-                #geom_bar(stat="identity", width=0.5) +
-                #xlab("") +
-                #ylab("Height (cm)") +
+                geom_point(aes(x = x, y = y), color = "red", size = 8, shape = 16)+ 
+                ggtitle("Line Plot for start")
                 #theme_minimal() +
                 #theme(legend.position="none")
-        })
+                })
     
 
 })
