@@ -16,11 +16,12 @@ This peer assignment has two parts :
    
 Click the Below Link for the Application.
 
-https://joejokelly.shinyapps.io/backup/ 
+##https://joejokelly.shinyapps.io/backup/ 
+
 (To update link) like below.
- https://bkarmay.shinyapps.io/PricePredictorForDiamonds/
+https://joejokelly.shinyapps.io/GaltonFamiliesAgePreductor/
 
 Click the Below Link for the Rpubs presentation.
 
 To update rpubs presenation 
-http://rpubs.com/bkarmay/338599
+https://rpubs.com/joejokelly/1215349
