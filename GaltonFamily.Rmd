@@ -1,0 +1,50 @@
+---
+title: "Galton Family : Shiny Application and Reproducible Pitch"
+Author : "Joe Okelly"
+date : "08/30/2024"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## GaltonFamilies Analysis Report
+
+Galton Families Analysis Report enabled developing data products using shiny apps 
+Embedded using RMarkDown.
+
+Use the Pageup and Pagedown keys to travere between slides.
+
+## Application Overview
+
+- Galton Families data set use to predict the childrens height, both son and daughter
+- on the basis of the parents height
+
+## Slide with Complete Reporting Appliaction
+
+Click the Below Link for the Application.
+
+https://joejokelly.shinyapps.io/backup/
+
+
+Click the link below for compiled project files on gitub repo.
+
+https://github.com/Joejokelly/GaltonFamiies-ShinyProject
+
+## Data Used
+
+The data used for this application is diamonds data set, which is part of ggplot2 package. Containing information about 53940 diamonds with 10 variables.
+
+```{r, echo=FALSE}
+library(shiny)
+library(HistData)
+data("GaltonFamilies")
+library(dplyr)
+library(ggplot2)
+library("ggplot2")
+
+gf <- GaltonFamilies
+head(gf)
+```
+
