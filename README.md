@@ -16,12 +16,10 @@ This peer assignment has two parts :
    
 Click the Below Link for the Application.
 
-##https://joejokelly.shinyapps.io/backup/ 
+https://joejokelly.shinyapps.io/galtonfamiiesprediction/
 
-(To update link) like below.
-https://joejokelly.shinyapps.io/GaltonFamiliesAgePreductor/
 
 Click the Below Link for the Rpubs presentation.
 
-To update rpubs presenation 
 https://rpubs.com/joejokelly/1215349
+
