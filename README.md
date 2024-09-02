@@ -22,6 +22,6 @@ https://joejokelly.shinyapps.io/galtonfamiiesprediction/
 Click the Below Link for the Rpubs presentation.
 
 
-https://rpubs.com/joejokelly/1215562
+https://rpubs.com/joejokelly/1215587
 
 
